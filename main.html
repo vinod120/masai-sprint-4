@@ -6,38 +6,160 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     </head>
     <body>
-        <div style="background: url(resources/background-image_1.jpeg);">
-            <div class="container py-5">
-                <header class="text-center py-5 text-white">
-                    <h1 class="display-2 text-center font-weight-bold mb-4">MASAI</h1>
-                    <p class="mb-0 text-monospace ">Find Best Food & Drinks in Your Nearest Areas</p>
-                    <div class="d-flex">
-                        <div class="p-2 flex-grow-1">
-                            <div class="input-group mb-3">
-                                <div class="input-group-prepend">
-                                  <button class="btn btn-outline-secondary dropdown-toggle text-white text-monospace" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select City</button>
-                                  <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">Hyderbad</a>
-                                    <a class="dropdown-item" href="#">Bangalore</a>
-                                    <a class="dropdown-item" href="#">Mumbai</a>
-                                    <a class="dropdown-item" href="#">Kolkata</a>
-                                    <a class="dropdown-item" href="#">Vizag</a>
-                                    <a class="dropdown-item" href="#">Pune</a>
-                                    <a class="dropdown-item" href="#">Amaravathi</a>
-                                    <div role="separator" class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#">Separated link</a>
+        <div class="card">
+            <img src="resources/background-image_1.jpeg" class="card-img" alt="...">
+            <div class="card-img-overlay">
+                <div class="position-absolute p-3">
+                    <img src="resources/logo.svg" class="img-fluid"/>
+                </div>
+                <div class="container py-5">
+                    <header class="text-center py-5 text-white">
+                        <h1 class="display-2 text-center font-weight-bold mb-4">MASAI</h1>
+                        <p class="mb-0 text-monospace ">Find Best Food & Drinks in Your Nearest Areas</p>
+                        <div class="d-flex">
+                            <div class="p-2 flex-grow-1">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                      <button class="btn btn-outline-secondary dropdown-toggle text-white text-monospace" id="selectCity" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select City</button>
+                                      <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Hyderbad</a>
+                                        <a class="dropdown-item" href="#">Bangalore</a>
+                                        <a class="dropdown-item" href="#">Mumbai</a>
+                                        <a class="dropdown-item" href="#">Kolkata</a>
+                                        <a class="dropdown-item" href="#">Vizag</a>
+                                        <a class="dropdown-item" href="#">Pune</a>
+                                        <a class="dropdown-item" href="#">Amaravathi</a>
+                                      </div>
+                                    </div>
+                                    <input type="text" class="form-control" aria-label="Text input with dropdown button" id="searchText">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-outline-secondary text-white" type="button" id="searchButton">
+                                            <span class="material-icons">
+                                            search
+                                            </span>
+                                        </button>
+                                    </div>
                                   </div>
-                                </div>
-                                <input type="text" class="form-control" aria-label="Text input with dropdown button">
-                                <div class="input-group-append">
-                                    <button class="btn btn-outline-secondary text-white" type="button" id="inputGroupFileAddon04"><span class="material-icons">
-                                        search
-                                        </span></button>
-                                  </div>
-                              </div>
+                            </div>
+                          </div>
+                    </header>
+                </div>
+            </div>
+        </div>
+        <br/><br/>
+        <div class="container-fluid">
+            <h1 class="disply-4 text-danger">Exclusive</h1>
+            <div class="row">
+                <div class="col-3">
+                    <div class="card">
+                        <img src="resources/Biriyani_bohvze.webp" class="card-img" alt="...">
+                        <div class="card-img-overlay">
+                            <div class="position-relative" style="margin-top: 92%;">
+                                <header class="text-white text-center">
+                                    <h5 class="font-weight-bold">BIRYANI</h5>
+                            </header>
+                            </div>
+                            
                         </div>
                       </div>
-                </header>
+                </div>
+                <div class="col-3">
+                    <div class="card">
+                        <img src="resources/Offers_yqoiuk.webp" class="card-img" alt="...">
+                        <div class="card-img-overlay">
+                            <div class="position-relative" style="margin-top: 92%;">
+                                <header class="text-white text-center">
+                                    <h5 class="font-weight-bold">OFFERS NEAR YOU</h5>
+                            </header>
+                            </div>
+                            
+                        </div>
+                      </div>
+                </div>
+                <div class="col-3">
+                    <div class="card">
+                        <img src="resources/SouthIndian_a5ivgy.webp" class="card-img" alt="...">
+                        <div class="card-img-overlay">
+                            <div class="position-relative" style="margin-top: 92%;">
+                                <header class="text-white text-center">
+                                    <h5 class="font-weight-bold">SOUTH INDIAN</h5>
+                            </header>
+                            </div>
+                            
+                        </div>
+                      </div>
+                </div>
+                <div class="col-3">
+                    <div class="card">
+                        <img src="resources/SuperFastDelivery_lmh0wh.webp" class="card-img" alt="...">
+                        <div class="card-img-overlay">
+                            <div class="position-relative" style="margin-top: 85%;">
+                                <header class="text-white text-center">
+                                    <h5 class="font-weight-bold">SUPER FAST DELIVERY</h5>
+                            </header>
+                            </div>
+                            
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+        <br/>
+        <div class="container-fluid">
+            <h1 class="disply-4 text-success">Recommended</h1>
+            <div class="row">
+                <div class="col-3">
+                    <div class="card">
+                        <img src="resources/NorthIndian_u554zm.webp" class="card-img" alt="...">
+                        <div class="card-img-overlay">
+                            <div class="position-relative" style="margin-top: 92%;">
+                                <header class="text-white text-center">
+                                    <h5 class="font-weight-bold">NORTH INDIAN</h5>
+                            </header>
+                            </div>
+                            
+                        </div>
+                      </div>
+                </div>
+                <div class="col-3">
+                    <div class="card">
+                        <img src="resources/TopRated_kyu7dk.webp" class="card-img" alt="...">
+                        <div class="card-img-overlay">
+                            <div class="position-relative" style="margin-top: 92%;">
+                                <header class="text-white text-center">
+                                    <h5 class="font-weight-bold">TOP RATED</h5>
+                            </header>
+                            </div>
+                            
+                        </div>
+                      </div>
+                </div>
+                <div class="col-3">
+                    <div class="card">
+                        <img src="resources/Biriyani_bohvze.webp" class="card-img" alt="...">
+                        <div class="card-img-overlay">
+                            <div class="position-relative" style="margin-top: 92%;">
+                                <header class="text-white text-center">
+                                    <h5 class="font-weight-bold">PIZZA</h5>
+                            </header>
+                            </div>
+                            
+                        </div>
+                      </div>
+                </div>
+                <div class="col-3">
+                    <div class="card">
+                        <img src="resources/SuperFastDelivery_lmh0wh.webp" class="card-img" alt="...">
+                        <div class="card-img-overlay">
+                            <div class="position-relative" style="margin-top: 85%;">
+                                <header class="text-white text-center">
+                                    <h5 class="font-weight-bold">SUPER FAST DELIVERY</h5>
+                            </header>
+                            </div>
+                            
+                        </div>
+                      </div>
+                </div>
             </div>
         </div>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
