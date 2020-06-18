@@ -29,8 +29,13 @@
                 </a>
             </div>
             <div class="card-img-overlay">
-                <div class="position-absolute p-3">
-                    <img src="resources/logo.svg" class="img-fluid"/>
+                <div class="d-flex justify-content-between">
+                    <div class="p-3">
+                        <img src="resources/logo.svg" class="img-fluid"/>
+                    </div>
+                    <div class="p-3">
+                        <button type="button" class="btn btn-info" id="login">Signup/Login</button>
+                    </div>
                 </div>
                 <div class="container py-5">
                     <header class="text-center py-5 text-white">
@@ -42,13 +47,13 @@
                                     <div class="input-group-prepend">
                                       <button class="btn btn-outline-secondary dropdown-toggle text-white text-monospace" id="selectCity" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select City</button>
                                       <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="#">Hyderbad</a>
-                                        <a class="dropdown-item" href="#">Bangalore</a>
-                                        <a class="dropdown-item" href="#">Mumbai</a>
-                                        <a class="dropdown-item" href="#">Kolkata</a>
-                                        <a class="dropdown-item" href="#">Vizag</a>
-                                        <a class="dropdown-item" href="#">Pune</a>
-                                        <a class="dropdown-item" href="#">Amaravathi</a>
+                                        <a class="dropdown-item" href="hyderbad.html">Hyderbad</a>
+                                        <a class="dropdown-item" href="bangalore.html">Bangalore</a>
+                                        <a class="dropdown-item" href="mumbai.html">Mumbai</a>
+                                        <a class="dropdown-item" href="kolkata.html">Kolkata</a>
+                                        <a class="dropdown-item" href="vizag.html">Vizag</a>
+                                        <a class="dropdown-item" href="pune.html">Pune</a>
+                                        <a class="dropdown-item" href="amaravathi.html">Amaravathi</a>
                                       </div>
                                     </div>
                                     <input type="text" class="form-control" aria-label="Text input with dropdown button" id="searchText">
@@ -66,191 +71,193 @@
                 </div>
             </div>
         </div>
-        <br/>
-        <div class="container-fluid">
+        <div class="container-fluid mt-4">
             <h1 class="disply-4 text-danger">Exclusive</h1>
             <div class="row">
                 <div class="col-3">
-                    <div class="card">
-                        <img src="resources/Biriyani_bohvze.webp" class="card-img" alt="...">
-                        <div class="card-img-overlay">
-                            <div class="position-relative" style="margin-top: 92%;">
-                                <header class="text-white text-center">
-                                    <h5 class="font-weight-bold">BIRYANI</h5>
-                            </header>
-                            </div>  
-                        </div>
-                      </div>
-                </div>
-                <div class="col-3">
-                    <div class="card">
-                        <img src="resources/Offers_yqoiuk.webp" class="card-img" alt="...">
-                        <div class="card-img-overlay">
-                            <div class="position-relative" style="margin-top: 92%;">
-                                <header class="text-white text-center">
-                                    <h5 class="font-weight-bold">OFFERS NEAR YOU</h5>
-                            </header>
+                    <a href="#">
+                        <div class="card">
+                            <img src="resources/Biriyani_bohvze.webp" class="card-img" alt="...">
+                            <div class="card-img-overlay">
+                                <div class="position-relative" style="margin-top: 92%;">
+                                    <header class="text-white text-center">
+                                        <h5 class="font-weight-bold">BIRYANI</h5>
+                                </header>
+                                </div>  
                             </div>
                         </div>
-                      </div>
+                    </a>
                 </div>
                 <div class="col-3">
-                    <div class="card">
-                        <img src="resources/SouthIndian_a5ivgy.webp" class="card-img" alt="...">
-                        <div class="card-img-overlay">
-                            <div class="position-relative" style="margin-top: 92%;">
-                                <header class="text-white text-center">
-                                    <h5 class="font-weight-bold">SOUTH INDIAN</h5>
-                            </header>
-                            </div>  
+                    <a href="#">
+                        <div class="card">
+                            <img src="resources/Offers_yqoiuk.webp" class="card-img" alt="...">
+                            <div class="card-img-overlay">
+                                <div class="position-relative" style="margin-top: 92%;">
+                                    <header class="text-white text-center">
+                                        <h5 class="font-weight-bold">OFFERS NEAR YOU</h5>
+                                </header>
+                                </div>
+                            </div>
                         </div>
-                      </div>
+                    </a>
                 </div>
                 <div class="col-3">
-                    <div class="card">
-                        <img src="resources/SuperFastDelivery_lmh0wh.webp" class="card-img" alt="...">
-                        <div class="card-img-overlay">
-                            <div class="position-relative" style="margin-top: 85%;">
-                                <header class="text-white text-center">
-                                    <h5 class="font-weight-bold">SUPER FAST DELIVERY</h5>
-                            </header>
-                            </div> 
+                    <a href="#">
+                        <div class="card">
+                            <img src="resources/SouthIndian_a5ivgy.webp" class="card-img" alt="...">
+                            <div class="card-img-overlay">
+                                <div class="position-relative" style="margin-top: 92%;">
+                                    <header class="text-white text-center">
+                                        <h5 class="font-weight-bold">SOUTH INDIAN</h5>
+                                </header>
+                                </div>  
+                            </div>
                         </div>
-                      </div>
+                    </a>
+                </div>
+                <div class="col-3">
+                    <a href="#">
+                        <div class="card">
+                            <img src="resources/SuperFastDelivery_lmh0wh.webp" class="card-img" alt="...">
+                            <div class="card-img-overlay">
+                                <div class="position-relative" style="margin-top: 85%;">
+                                    <header class="text-white text-center">
+                                        <h5 class="font-weight-bold">SUPER FAST DELIVERY</h5>
+                                </header>
+                                </div> 
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
-        <br/>
-        <div class="container-fluid">
+        <div class="container-fluid mt-4">
             <h1 class="disply-4 text-success">Recommended</h1>
             <div class="row">
                 <div class="col-3">
-                    <div class="card">
-                        <img src="resources/NorthIndian_u554zm.webp" class="card-img" alt="...">
-                        <div class="card-img-overlay">
-                            <div class="position-relative" style="margin-top: 92%;">
-                                <header class="text-white text-center">
-                                    <h5 class="font-weight-bold">NORTH INDIAN</h5>
-                            </header>
-                            </div>  
-                        </div>
-                      </div>
-                </div>
-                <div class="col-3">
-                    <div class="card">
-                        <img src="resources/TopRated_kyu7dk.webp" class="card-img" alt="...">
-                        <div class="card-img-overlay">
-                            <div class="position-relative" style="margin-top: 92%;">
-                                <header class="text-white text-center">
-                                    <h5 class="font-weight-bold">TOP RATED</h5>
-                            </header>
-                            </div>
-                            
-                        </div>
-                      </div>
-                </div>
-                <div class="col-3">
-                    <div class="card">
-                        <img src="resources/best_in_town.jpeg" class="card-img" alt="...">
-                        <div class="card-img-overlay">
-                            <div class="position-relative" style="margin-top: 92%;">
-                                <header class="text-white text-center">
-                                    <h5 class="font-weight-bold"></h5>
-                            </header>
+                    <a href="#">
+                        <div class="card">
+                            <img src="resources/NorthIndian_u554zm.webp" class="card-img" alt="...">
+                            <div class="card-img-overlay">
+                                <div class="position-relative" style="margin-top: 92%;">
+                                    <header class="text-white text-center">
+                                        <h5 class="font-weight-bold">NORTH INDIAN</h5>
+                                </header>
+                                </div>  
                             </div>
                         </div>
-                      </div>
+                    </a>
                 </div>
                 <div class="col-3">
-                    <div class="card">
-                        <img src="resources/dine_on_budget.jpeg" class="card-img" alt="...">
-                        <div class="card-img-overlay">
-                            <div class="position-relative" style="margin-top: 85%;">
-                                <header class="text-white text-center">
-                                    <h5 class="font-weight-bold"></h5>
-                            </header>
+                    <a href="#">
+                        <div class="card">
+                            <img src="resources/TopRated_kyu7dk.webp" class="card-img" alt="...">
+                            <div class="card-img-overlay">
+                                <div class="position-relative" style="margin-top: 92%;">
+                                    <header class="text-white text-center">
+                                        <h5 class="font-weight-bold">TOP RATED</h5>
+                                </header>
+                                </div>
+                                
                             </div>
                         </div>
-                      </div>
+                    </a>
+                </div>
+                <div class="col-3">
+                    <a href="#">
+                        <div class="card">
+                            <img src="resources/best_in_town.jpeg" class="card-img" alt="...">
+                            <div class="card-img-overlay">
+                                <div class="position-relative" style="margin-top: 92%;">
+                                    <header class="text-white text-center">
+                                        <h5 class="font-weight-bold"></h5>
+                                </header>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-3">
+                    <a href="#">
+                        <div class="card">
+                            <img src="resources/dine_on_budget.jpeg" class="card-img" alt="...">
+                            <div class="card-img-overlay">
+                                <div class="position-relative" style="margin-top: 85%;">
+                                    <header class="text-white text-center">
+                                        <h5 class="font-weight-bold"></h5>
+                                </header>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
-        <br/>
-        <div class="container-fluid">
-            <h1 class="disply-4 text-dark">Offers For You</h1>
+        <div class="container-fluid mt-4">
+            <h1 class="disply-4 text-info">Offers For You</h1>
             <div class="row">
                 <div class="col-3">
                     <div class="card">
-                        <img src="resources/order_healthy.jpeg" class="card-img" alt="...">
-                      </div>
-                </div>
-                <div class="col-3">
-                    <div class="card">
-                        <img src="resources/pay online.jpeg" class="card-img" alt="...">
+                        <a href="#">
+                            <img src="resources/order_healthy.jpeg" class="card-img" alt="...">
+                        </a>
                     </div>
                 </div>
                 <div class="col-3">
                     <div class="card">
-                        <img src="resources/resturant_with_classy.png" class="card-img" alt="...">
+                        <a href="#">
+                            <img src="resources/pay online.jpeg" class="card-img" alt="...">
+                        </a>
                     </div>
                 </div>
                 <div class="col-3">
                     <div class="card">
-                        <img src="resources/upto_30%.jpeg" class="card-img" alt="...">
+                        <a href="#">
+                            <img src="resources/resturant_with_classy.png" class="card-img" alt="...">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card">
+                        <a href="#">
+                            <img src="resources/upto_30%.jpeg" class="card-img" alt="...">
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-        <br/>
-        <div id="carouselExampleControls" class="carousel slide bg-dark p-4" data-ride="carousel">
+        <div id="carouselExampleControls" class="carousel slide bg-dark p-4 mt-4" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-3">
                             <div class="card">
-                                <img src="resources/veggie.jpeg" class="card-img" alt="...">
-                              </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="card">
-                                <img src="resources/enjoy_delivery.jpeg" class="card-img" alt="...">
+                                <a href="#">
+                                    <img src="resources/veggie.jpeg" class="card-img" alt="...">
+                                </a>
                             </div>
                         </div>
                         <div class="col-3">
                             <div class="card">
-                                <img src="resources/premium_restarants.jpeg" class="card-img" alt="...">
+                                <a href="#">
+                                    <img src="resources/enjoy_delivery.jpeg" class="card-img" alt="...">
+                                </a>
                             </div>
                         </div>
                         <div class="col-3">
                             <div class="card">
-                                <img src="resources/a_sweet.jpeg" class="card-img" alt="...">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-3">
-                            <div class="card">
-                                <img src="resources/all_stars.jpeg" class="card-img" alt="...">
-                              </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="card">
-                                <img src="resources/order_healthy.jpeg" class="card-img" alt="...">
+                                <a href="#">
+                                    <img src="resources/premium_restarants.jpeg" class="card-img" alt="...">
+                                </a>
                             </div>
                         </div>
                         <div class="col-3">
                             <div class="card">
-                                <img src="resources/resturant_with_classy.png" class="card-img" alt="...">
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="card">
-                                <img src="resources/upto_30%.jpeg" class="card-img" alt="...">
+                                <a href="#">
+                                    <img src="resources/a_sweet.jpeg" class="card-img" alt="...">
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -261,22 +268,64 @@
                     <div class="row">
                         <div class="col-3">
                             <div class="card">
-                                <img src="resources/order_healthy.jpeg" class="card-img" alt="...">
-                              </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="card">
-                                <img src="resources/pay online.jpeg" class="card-img" alt="...">
+                                <a href="#">
+                                    <img src="resources/all_stars.jpeg" class="card-img" alt="...">
+                                </a>
                             </div>
                         </div>
                         <div class="col-3">
                             <div class="card">
-                                <img src="resources/resturant_with_classy.png" class="card-img" alt="...">
+                                <a href="#">
+                                    <img src="resources/order_healthy.jpeg" class="card-img" alt="...">
+                                </a>
                             </div>
                         </div>
                         <div class="col-3">
                             <div class="card">
+                                <a href="#">
+                                    <img src="resources/resturant_with_classy.png" class="card-img" alt="...">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="card">
+                                <a href="#">
+                                    <img src="resources/upto_30%.jpeg" class="card-img" alt="...">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="card">
+                                <a href="#">
+                                    <img src="resources/order_healthy.jpeg" class="card-img" alt="...">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="card">
+                                <a href="#">
+                                    <img src="resources/pay online.jpeg" class="card-img" alt="...">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="card">
+                                <a href="#">
+                                    <img src="resources/resturant_with_classy.png" class="card-img" alt="...">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="card">
+                               <a href="#">
                                 <img src="resources/upto_30%.jpeg" class="card-img" alt="...">
+                               </a>
                             </div>
                         </div>
                     </div>
@@ -291,7 +340,90 @@
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="sr-only">Next</span>
             </a>
-          </div>
+        </div>
+        <div class="mt-4">
+            <div class="container text-left">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="p-2 text-center">
+                            <h4 class="font-weight-bold">About Us</h4>
+                            <ul class="list-unstyled text-small">
+                                <li><a class="text-muted" href="#">About</a></li>
+                                <li><a class="text-muted" href="#">Report</a></li>
+                                <li><a class="text-muted" href="#">Blog</a></li>
+                                <li><a class="text-muted" href="#">Career</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="p-2 text-center">
+                            <h4 class="font-weight-bold">For Restautants</h4>
+                            <ul class="list-unstyled text-small">
+                                <li><a class="text-muted" href="#">Add Resturant</a></li>
+                                <li><a class="text-muted" href="#">Product For Business</a></li>
+                                <li><a class="text-muted" href="#">Terms of Service </a></li>
+                                <li><a class="text-muted" href="#">Privacy Policy </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="text-center">
+                            <h4 class="font-weight-bold">Need Help</h4>
+                            <form>
+                                <div class="form-group row">
+                                  <label for="inputEmail3" class="col-sm-2 col-form-label">Name</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="inputEmail3">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                  <label for="inputPassword3" class="col-sm-2 col-form-label">Email</label>
+                                    <div class="col-sm-10">
+                                        <input type="password" class="form-control" id="inputPassword3">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="inputPassword3" class="col-sm-2 col-form-label">Any Issue</label>
+                                    <div class="col-sm-10">
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group row ml-5">
+                                  <div class="col-sm-10">
+                                    <button type="submit" class="btn btn-primary btn-lg btn-block mr-2">Submit</button>
+                                  </div>
+                                </div>
+                              </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer text-center border-top">
+            <div class="footer-icons center mt-3">
+                <span class="icon p-2">
+                    <i class="fab fa-facebook"></i>
+                </span>
+                <span class="icon p-2">
+                    <i class="fab fa-twitter"></i>
+                </span>
+                <span class="icon p-2">
+                    <i class="fab fa-instagram"></i>
+                </span>
+                <span class="icon p-2">
+                    <i class="fab fa-youtube"></i>
+                </span>
+                <span class="icon p-2">
+                    <i class="fab fa-linkedin"></i>
+                </span>
+                <span class="icon p-2">
+                    <i class="fab fa-github"></i>
+                </span>
+            </div>
+            <div class="col-12 text-center mt-3 border-top border-bottom">
+                <small class="mt-2">All Rights Recevied <strong>@Vinod</strong> © 2020 - 2021</small>
+            </div>
+        </div>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
