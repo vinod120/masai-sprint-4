@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>User Repo Page</title>
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"
+  />
+  <style>
+  img {
+      height: 70px;
+      width: 70px;
+  }
+  </style>
+</head>
+<body>
+  <div class="container">
+        <div class="row p-5">
+            <!-- <button onclick="getUserRepoPromise()">Get Selected User Repos</button> -->
+        <h3 class="text-secondary">Below is/are the repos of requested user <small>(click on the repo name to explore it)</small></h3>
+          <table id='tbody' class="table table-bordered table-secondary table-striped text-center">
+            
+          </table>
+        </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <script>
+      // user repos api
+      var gitUserReposAPI = localStorage.user_repos;
+  
+      // Onload calling getUserRepoPromise function to populate repos
+      window.onload(getUserRepoPromise())
+  
+      // Populating selected user repos in table
+      function getUserRepoPromise(){
+            var user = gitUserReposAPI;
+            // console.log(user)
+        fetch(user)
+        .then(response=>response.json())
+        // 
+        .then(response=>{
+          let noOfRepoLinks = response.length
+          
+            if(noOfRepoLinks===0){
+              alert("No Repos found for requested user!!")
+            }
+            else{
+              for (var i=0; i<noOfRepoLinks; i++){
+              $('#tbody').append(
+                `
+                  <tr>
+                    <td>
+                      <a href='${Object.values(response[i]['html_url']).join('')}'>${Object.values(response[i]['name']).join('')}</a>  
+                    </td>  
+                  <tr>
+                `
+              )
+            }
+            }})
+      }
+  </script>
+</body>
+
+  
+</html>
